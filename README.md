@@ -1,12 +1,12 @@
 # JSort
 
-Has implementation of different sorting algorithms in java.
+Has implementations of different sorting algorithms in java.
 
 ## Currently Implemented
 1. Insertion Sort
 2. Merge Sort
 
-## ToDo
+## To Do
 1. Selection Sort
 2. Bubble Sort
 3. Quick Sort
