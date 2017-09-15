@@ -3,6 +3,7 @@ package com.srt.sort;
 import java.util.Arrays;
 import java.util.function.BiFunction;
 
+@SuppressWarnings("unchecked")
 public class InsertionSort<T extends Comparable> implements Sort<T> {
 
     private T[] Sort(T[] arr, BiFunction<T,T, Boolean> compare){
