@@ -51,12 +51,12 @@ public class MergeSort<T extends Comparable> implements Sort<T>{
     }
 
     @Override
-    public T[] SortAscending(T[] array) {
+    public T[] sortAscending(T[] array) {
         return Sort(array, (a,b) -> a.compareTo(b) < 0);
     }
 
     @Override
-    public T[] SortDescending(T[] array) {
+    public T[] sortDescending(T[] array) {
         return Sort(array, (a,b) -> a.compareTo(b) > 0);
     }
 }

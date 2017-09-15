@@ -19,11 +19,11 @@ public class InsertionSort<T extends Comparable> implements Sort<T> {
         return array;
     }
 
-    public T[] SortAscending(T[] array){
+    public T[] sortAscending(T[] array){
         return Sort(array, (a, b) -> a.compareTo(b) < 0);
     }
 
-    public T[] SortDescending(T[] array) {
+    public T[] sortDescending(T[] array) {
         return Sort(array, (a, b) -> a.compareTo(b) > 0);
     }
 }
