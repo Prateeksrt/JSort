@@ -4,6 +4,7 @@ import java.lang.reflect.Array;
 import java.util.Arrays;
 import java.util.function.BiFunction;
 
+@SuppressWarnings("unchecked")
 public class MergeSort<T extends Comparable> implements Sort<T>{
 
     private Class<T> clazz;
@@ -29,7 +30,6 @@ public class MergeSort<T extends Comparable> implements Sort<T>{
         return mergedArray;
     }
     private T[] getArray(Class<T> clazz, int size){
-        @SuppressWarnings("unchecked")
         T[] es = (T[]) Array.newInstance(clazz, size);
         return  es;
     }
