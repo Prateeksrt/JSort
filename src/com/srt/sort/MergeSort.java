@@ -5,7 +5,7 @@ import java.util.Arrays;
 import java.util.function.BiFunction;
 
 @SuppressWarnings("unchecked")
-public class MergeSort<T extends Comparable> implements Sort<T>{
+public class MergeSort<T extends Comparable> extends JSort<T>{
 
     private Class<T> clazz;
 
@@ -34,7 +34,7 @@ public class MergeSort<T extends Comparable> implements Sort<T>{
         return  es;
     }
 
-    private T[] Sort(T[] array, BiFunction<T, T, Boolean> compare){
+    T[] Sort(T[] array, BiFunction<T, T, Boolean> compare){
         if ( array.length == 1){
             return array;
         }
@@ -48,15 +48,5 @@ public class MergeSort<T extends Comparable> implements Sort<T>{
 
     private T[] FirstHalf(T[] array) {
         return Arrays.copyOfRange(array, 0 , (array.length /2));
-    }
-
-    @Override
-    public T[] sortAscending(T[] array) {
-        return Sort(array, (a,b) -> a.compareTo(b) < 0);
-    }
-
-    @Override
-    public T[] sortDescending(T[] array) {
-        return Sort(array, (a,b) -> a.compareTo(b) > 0);
     }
 }
