@@ -18,11 +18,9 @@ public class MergeSort<T extends Comparable> extends JSort<T> {
         T[] mergedArray = getArray(clazz, left.length + right.length);
         while (i < left.length || j < right.length) {
             if (i == left.length) {
-                System.out.println("Hi");
                 while (j != right.length)
                     mergedArray[k++] = right[j++];
             } else if (j == right.length) {
-                System.out.println("Hello");
                 while (i != left.length)
                     mergedArray[k++] = left[i++];
             } else if (compare.apply(left[i], right[j])) {
