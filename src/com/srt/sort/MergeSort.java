@@ -4,7 +4,7 @@ import java.lang.reflect.Array;
 import java.util.Arrays;
 import java.util.function.BiFunction;
 
-@SuppressWarnings("unchecked")
+@SuppressWarnings({"unchecked", "unused"})
 public class MergeSort<T extends Comparable> extends JSort<T>{
 
     private Class<T> clazz;

@@ -3,7 +3,7 @@ package com.srt.sort;
 import java.util.Arrays;
 import java.util.function.BiFunction;
 
-@SuppressWarnings("unchecked")
+@SuppressWarnings({"unchecked", "unused"})
 public class InsertionSort<T extends Comparable> extends JSort<T> {
 
     T[] Sort(T[] arr, BiFunction<T, T, Boolean> compare){

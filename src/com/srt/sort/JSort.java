@@ -2,6 +2,7 @@ package com.srt.sort;
 
 import java.util.function.BiFunction;
 
+@SuppressWarnings("unchecked")
 public abstract class JSort<T extends Comparable> implements Sort<T> {
 
     abstract T[] Sort(T[] array, BiFunction<T, T, Boolean> compare);

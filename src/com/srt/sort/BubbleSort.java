@@ -3,6 +3,7 @@ package com.srt.sort;
 import java.util.Arrays;
 import java.util.function.BiFunction;
 
+@SuppressWarnings({"unused"})
 public class BubbleSort<T extends Comparable> extends JSort<T> {
 
     T[] Sort(T[] arr, BiFunction<T, T, Boolean> compare){
